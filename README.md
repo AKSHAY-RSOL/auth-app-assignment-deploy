@@ -2,6 +2,20 @@
 
 AuthApp is a full-stack authentication web app built for a college assignment. It includes user signup, login, protected routes, and persistent session restore.
 
+## Objective
+
+The objective of this project is to build and deploy a complete full-stack authentication system using modern web technologies. The application demonstrates secure user registration and login, token-based authentication, protected routing, and persistent user sessions.
+
+## Architecture
+
+This project follows a monorepo structure with separate frontend and backend applications:
+
+- Client Layer (React + Vite + Tailwind CSS): Handles UI, routing, form validation, and session state on the browser.
+- Server Layer (Node.js + Express): Exposes REST APIs for authentication and protected user data.
+- Data Layer (MongoDB Atlas + Mongoose): Stores user records with hashed passwords.
+- Security Layer (JWT + bcryptjs): Uses password hashing for storage and JWT tokens for authenticated requests.
+- Deployment Layer: Frontend is hosted on Vercel and backend API is hosted on Render.
+
 ## Tech Stack
 
 - Frontend: React, Vite, Tailwind CSS
@@ -92,6 +106,14 @@ AuthApp is a full-stack authentication web app built for a college assignment. I
 - POST /api/auth/register
 - POST /api/auth/login
 - GET /api/auth/me (protected)
+
+## Output
+
+- Users can create an account with name, email, and password.
+- Registered users can log in and receive a JWT token.
+- Authenticated users can access the protected dashboard.
+- User session is restored after browser refresh through the /me endpoint.
+- Users can log out and the protected route becomes inaccessible until next login.
 
 ## Screenshots
 
