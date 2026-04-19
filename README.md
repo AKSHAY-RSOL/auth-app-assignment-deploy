@@ -1,6 +1,6 @@
 # AuthApp
 
-AuthApp is a simple full-stack authentication app built for a college assignment. It uses a React frontend, an Express API, MongoDB Atlas, and JWT-based auth with password hashing.
+AuthApp is a full-stack authentication web app built for a college assignment. It includes user signup, login, protected routes, and persistent session restore.
 
 ## Tech Stack
 
@@ -21,6 +21,11 @@ AuthApp is a simple full-stack authentication app built for a college assignment
 - Password hashing with bcrypt
 - Clean responsive UI
 
+## Live Links
+
+- Frontend (Vercel): https://auth-app-assignment-deploy.vercel.app/
+- Backend API (Render): https://auth-app-assignment.onrender.com
+
 ## Project Structure
 
 - `client/` - React app
@@ -40,7 +45,11 @@ AuthApp is a simple full-stack authentication app built for a college assignment
    npm install
    ```
 
-2. Create a `.env` file from `.env.example` and add your MongoDB Atlas URI and JWT secret.
+2. Create a `.env` file from `.env.example` and set:
+
+   - MONGO_URI
+   - JWT_SECRET
+   - PORT=5000
 
 3. Start the API:
    ```bash
@@ -55,7 +64,11 @@ AuthApp is a simple full-stack authentication app built for a college assignment
    npm install
    ```
 
-2. Create a `.env` file from `.env.example` and set `VITE_API_URL` to your backend URL.
+2. Create a `.env` file from `.env.example` and set:
+
+   - VITE_API_URL=http://localhost:5000 (for local)
+
+   Use your Render URL in production.
 
 3. Start the app:
    ```bash
@@ -74,10 +87,11 @@ AuthApp is a simple full-stack authentication app built for a college assignment
 
 - `VITE_API_URL` - Backend base URL
 
-## Live Demo
+## API Endpoints
 
-- Frontend: https://auth-app-assignment-deploy.vercel.app/
-- Backend API: https://auth-app-assignment.onrender.com
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/auth/me (protected)
 
 ## Screenshots
 
@@ -87,3 +101,4 @@ Add screenshots here after deployment.
 
 - The backend `GET /api/auth/me` route restores the current session using the stored token.
 - The dashboard is protected, so users must log in before accessing it.
+- Client-side route refresh is handled on Vercel using a rewrite fallback.
