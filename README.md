@@ -117,6 +117,8 @@ This project follows a monorepo structure with separate frontend and backend app
 
 ## Screenshots
 <img width="1917" height="939" alt="image" src="https://github.com/user-attachments/assets/9640083e-5eb5-444a-b51b-362c1a760ea4" />
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/e08c70dd-4738-4004-af40-3708efe0c94d" />
+<img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/5e234de6-0f93-4df7-95d0-a659953385dc" />
 
 
 ## Notes
