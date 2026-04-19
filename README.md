@@ -116,8 +116,8 @@ This project follows a monorepo structure with separate frontend and backend app
 - Users can log out and the protected route becomes inaccessible until next login.
 
 ## Screenshots
+<img width="1917" height="939" alt="image" src="https://github.com/user-attachments/assets/9640083e-5eb5-444a-b51b-362c1a760ea4" />
 
-Add screenshots here after deployment.
 
 ## Notes
 
