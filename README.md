@@ -126,3 +126,5 @@ This project follows a monorepo structure with separate frontend and backend app
 - The backend `GET /api/auth/me` route restores the current session using the stored token.
 - The dashboard is protected, so users must log in before accessing it.
 - Client-side route refresh is handled on Vercel using a rewrite fallback.
+
+## Created with <3 by Akshay Gupta Burela
