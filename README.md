@@ -28,7 +28,7 @@ AuthApp is a simple full-stack authentication app built for a college assignment
 
 ## GitHub Repository
 
-- https://github.com/AKSHAY-RSOL/auth-app-assignment
+- https://github.com/AKSHAY-RSOL/auth-app-assignment-deploy
 
 ## Run Locally
 
@@ -76,8 +76,8 @@ AuthApp is a simple full-stack authentication app built for a college assignment
 
 ## Live Demo
 
-- Frontend: https://your-vercel-url.vercel.app
-- Backend API: https://your-render-url.onrender.com
+- Frontend: https://auth-app-assignment-deploy.vercel.app/
+- Backend API: https://auth-app-assignment.onrender.com
 
 ## Screenshots
 
